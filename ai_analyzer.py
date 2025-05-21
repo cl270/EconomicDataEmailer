@@ -15,7 +15,6 @@ def build_prompt(name, data):
             f"The previous month's CPI was {prev_cpi}% and Core CPI was {prev_core}%. "
             "Compare these results versus expectations and provide implications."
         )
-    # Default generic prompt
     return f"Here is the data for {name}: {data}. Provide a brief analysis comparing actual versus forecast versus previous and discuss implications."
 
 def analyze_release(context):
